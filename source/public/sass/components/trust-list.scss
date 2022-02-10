@@ -1,0 +1,23 @@
+.trust-list {
+  padding-top: 100px;
+}
+
+.trust-list__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-list__item {
+  padding: 0 50px;
+  opacity: .3;
+
+  @include media-exsm {
+    padding: 0 20px;
+  }
+}
+
+.trust-list__item:hover {
+  opacity: 1;
+}
