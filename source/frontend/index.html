@@ -7,19 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gas</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./plugins/jquery.fancybox.min.css">
   <link rel="shortcut icon" href="./img/favicon.ico">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__logo-wrap">
-      <img src="./img/logo.png" alt="" class="header__logo">
-    </div>
+    <div class="header__wrap content">
+      <div class="header__logo-wrap">
+        <img src="./img/logo.png" alt="" class="header__logo">
+      </div>
 
-    <div class="header__logo-wrap">
-      <img src="./img/rus.png" alt="" class="header__logo">
+      <div class="header__logo-wrap">
+        <img src="./img/rus.png" alt="" class="header__logo">
+      </div>
     </div>
   </header>
+
+  <div class="flag left">
+    <div class="flag__prop" id="rand_man"></div>
+    <div class="flag__val">ЧЕЛОВЕК НА СТРАНИЦЕ</div>
+  </div>
+
+  <div class="flag right">
+    <div class="flag__prop" id="rand_places"></div>
+    <div class="flag__val">СВОБОДНЫХ МЕСТ</div>
+  </div>
 
   <section class="main">
     <div class="main__wrap content">
@@ -32,11 +45,9 @@
         </p>
       </div>
 
-      <div class="main__wrapper">
+      <div class="main__wrapper" id="about">
         <div class="main__video-wrap">
-          <video class="main__video" controls="" autoplay="">
-            <source src="./img/video/ai_immediate_btc_pl.mp4" height="400" width="710" type="video/mp4">
-          </video>
+          <iframe  class="main__video" id="ytplayer" class="video-js embed-responsive-item" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/WKQ5AqtJ1_I?controls=1&amp;disablekb=0&amp;loop=1&amp;modestbranding=1&amp;rel=0&amp;fs=0&amp;showinfo=0&amp;autoplay=1&amp;playlist=WKQ5AqtJ1_I&amp;mute=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgakhtbfsxjmnkjst.info&amp;widgetid=1"></iframe>
         </div>
 
         <div class="main__form-wrap">
@@ -136,7 +147,7 @@
         </p>
 
         <div class="consult__btn">
-          <button class="btn">Проконсультироваться</button>
+          <a href="#about" class="btn">Проконсультироваться</a>
         </div>
       </div>
 
@@ -185,11 +196,13 @@
       </p>
 
       <div class="advantages__money">
-        <img class="advantages__money-img" src="../img/license.jpeg" alt="license">
+        <a data-fancybox="gallery" class="license-img fancy-img" href="./img/license.jpeg">
+          <img src="./img/license.jpeg" alt="Лицензия" class="advantages__money-img">
+        </a>
       </div>
 
       <div class="advantages__btn">
-        <a href="../img/license.jpeg" class="btn">Проконсультироваться</a>
+        <a data-fancybox="gallery" class="btn" href="./img/license.jpeg">Увеличить фото</a>
       </div>
 
     </div>
@@ -217,7 +230,7 @@
             </p>
 
             <div class="project__btn">
-              <button class="btn">Подать заявку</button>
+              <a href="#about" class="btn">Подать заявку</a>
             </div>
           </div>
         </div>
@@ -239,7 +252,7 @@
             </p>
 
             <div class="project__btn">
-              <button class="btn">Подать заявку</button>
+              <a href="#about" class="btn">Подать заявку</a>
             </div>
           </div>
         </div>
@@ -261,12 +274,11 @@
             </p>
 
             <div class="project__btn">
-              <button class="btn">Подать заявку</button>
+              <a href="#about" class="btn">Подать заявку</a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -429,38 +441,14 @@
   </footer>
 
   <script src="./plugins/jquery.min.js"></script>
+  <script src="./plugins/jquery.fancybox.min.js"></script>
+  <script src="./plugins/ion.rangeSlider.min.js"></script>
   <script src="./js/script.min.js"></script>
 
   <script>
-    $(document).ready(function () {
-      function updateTime() {
-        var currtime = new Date();
-        var currtime3 = (
-          (currtime.getHours() < 10 ? '0' : '') + currtime.getHours() + ":" +
-          (currtime.getMinutes() < 10 ? '0' : '') + currtime.getMinutes() + ":" +
-          (currtime.getSeconds() < 10 ? '0' : '') + currtime.getSeconds()
-        );
-
-        var month = currtime.getMonth() + 1;
-        var currdate = (
-          currtime.getFullYear() + "/" +
-          (month < 10 ? '0' : '') + month + "/" +
-          (currtime.getDate() < 10 ? '0' : '') + currtime.getDate()
-        );
-
-        var tzone = currtime.getTimezoneOffset();
-        tzone = tzone / 60 * -1;
-
-        $('#currtime .time').html(currtime3);
-        $('#currtime .timezone').html('GMT' + (tzone > 0 ? '+' : '') + tzone);
-        $('#currtime .date').html(currdate);
-      }
-
-      setInterval(updateTime, 1000);
-
-    });
-
-  </script>
+    $('#rand_man').text(Math.floor(Math.random() * (130 - 99 + 1)) + 99);
+    $('#rand_places').text(Math.floor(Math.random() * (19 - 9 + 1)) + 9);
+</script>
 
 </body>
 
