@@ -1,0 +1,32 @@
+.flag {
+  position: fixed;
+  top: 150px;
+  z-index: 10;
+  width: 216px;
+  height: 56px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  background: #4290fc;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.068), 0 1px 2px 0 rgba(0, 0, 0, 0.034);
+  font-size: 16px;
+  border-radius: 4px;
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  @include media-exsm {
+    display: none;
+  }
+}

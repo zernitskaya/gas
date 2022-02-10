@@ -4,7 +4,7 @@
 
 .consult__wrapper {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 1fr 1.1fr;
     gap: 50px;
 
   @include media-exsm {

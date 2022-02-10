@@ -1,13 +1,19 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
+    padding: 20px 0;
 
     @include media-exsm {
-      flex-direction: column;
-      padding: 5px 15px;
+      padding: 5px 0;
     }
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-exsm {
+    flex-direction: column;
+  }
 }
 
 .header__logo-wrap {
