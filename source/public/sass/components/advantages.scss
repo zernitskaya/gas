@@ -1,20 +1,20 @@
 .advantages {
-  padding: 30px 0;
-  background-image: url('../img/mainBg.jpeg');
-  background-position: top center;
-  background-size: cover;
+  padding: 100px 0;
+
+  @include media-exsm {
+    padding: 30px 0;
+  }
 }
 
 .advantages__title {
   text-transform: capitalize;
-  color: #fff;
+  color: #2d344e;
   line-height: 1.33;
   text-align: center;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
   margin-bottom: 20px;
-
 
   @include media-exsm {
     font-size: 28px;
@@ -28,83 +28,36 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #fff;
+  color: #2d344e;
   font-size: 20px;
   margin-bottom: 40px;
-}
-
-.advantages__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-
 
   @include media-exsm {
-    grid-template-columns: 1fr;
+    font-size: 18px;
   }
 }
 
-.advantages-item {
+.advantages__btn {
+  padding-top: 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #fff;
-  padding: 30px 20px;
-}
-
-.advantages-item__ico {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  // margin-bottom: 10px;
-  padding: 15px;
-}
-
-.advantages-item__title {
-  text-align: center;
-  line-height: 1.1;
-  font-size: 20px;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0 0 10px;
-}
-
-.advantages-item__text {
-  color: #4f637c;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 24px;
-  margin: 0 0 20px;
-}
-
-.advantages__money {
-  padding: 40px 0;
-}
-
-.advantages__money-img {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-}
-
-.advantages__money-text {
-  font-size: 30px;
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: #f8f8f8;
 }
 
 .advantages__money {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-exsm {
+    width: 100%;
+  }
 }
 
-.advantages__money-color {
-  color: #ff0000;
+.advantages__money-img {
+  width: 100%;
+  object-fit: contain;
 }

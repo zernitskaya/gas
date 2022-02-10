@@ -1,0 +1,21 @@
+.calk {
+  background-color: #2d344e;
+}
+
+
+.calk__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 100px;
+}
+
+.calk__block {
+  background-color: #fff;
+  width: 512px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
