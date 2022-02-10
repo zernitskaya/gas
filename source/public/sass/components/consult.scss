@@ -1,5 +1,9 @@
 .consult {
   padding-bottom: 100px;
+
+  @include media-exsm {
+    padding-bottom: 20px;
+  }
 }
 
 .consult__wrapper {
@@ -15,21 +19,42 @@
 
 .consult__left-wrap {
   padding: 50px 0 50px 0;
+
+  @include media-exsm {
+    padding: 20px 0 20px 0;
+  }
 }
 
 .consult__heading {
   font-weight: 700;
   font-size: 24px;
   padding-bottom: 20px;
+
+  @include media-exsm {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
 }
 
 .consult__text-small {
   opacity: .5;
   padding-bottom: 40px;
+
+  @include media-exsm {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+  }
 }
 
 .consult__text {
   padding-bottom: 30px;
+
+  @include media-exsm {
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+  }
 }
 
 .consult__img {

@@ -1,5 +1,9 @@
 .trust-list {
   padding-top: 100px;
+
+  @include media-exsm {
+    padding-top: 50px;
+  }
 }
 
 .trust-list__list {
