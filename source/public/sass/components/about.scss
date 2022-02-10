@@ -14,6 +14,7 @@
 
   @include media-exsm {
     margin-right: 0;
+    padding: 10px;
   }
 }
 
@@ -23,7 +24,7 @@
   font-size: 2.25rem;
 
   @include media-exsm {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -31,16 +32,29 @@
   display: flex;
   align-items: center;
   padding-top: 60px;
+
+  @include media-exsm {
+    padding-top: 30px;
+  }
 }
 
 .about__img {
   width: 80px;
   height: auto;
+
+  @include media-exsm {
+    width: 60px;
+  }
 }
 
 .about__text {
   margin-left: 15px;
   font-weight: 700;
+
+  @include media-exsm {
+    font-weight: normal;
+    font-size: 14px;
+  }
 }
 
 .about__blue-wrap {
@@ -54,10 +68,20 @@
   list-style-position: inside;
   padding-bottom: 50px;
   font-weight: 700;
+
+  @include media-exsm {
+    padding-bottom: 0;
+  }
 }
 
 .about__item {
   padding-top: 40px;
+
+  @include media-exsm {
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+  }
 }
 
 .about__item:before {
