@@ -8,6 +8,7 @@
   <title>gas</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./plugins/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/ion.rangeSlider.min.css">
   <link rel="shortcut icon" href="./img/favicon.ico">
 </head>
 
@@ -45,7 +46,7 @@
         </p>
       </div>
 
-      <div class="main__wrapper" id="about">
+      <div class="main__wrapper">
         <div class="main__video-wrap">
           <iframe class="main__video" id="ytplayer" class="video-js embed-responsive-item" frameborder="0"
             allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -53,7 +54,7 @@
             src="https://www.youtube.com/embed/WKQ5AqtJ1_I?controls=1&amp;disablekb=0&amp;loop=1&amp;modestbranding=1&amp;rel=0&amp;fs=0&amp;showinfo=0&amp;autoplay=1&amp;playlist=WKQ5AqtJ1_I&amp;mute=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgakhtbfsxjmnkjst.info&amp;widgetid=1"></iframe>
         </div>
 
-        <div class="main__form-wrap">
+        <div class="main__form-wrap" id="about">
           @@include('../layouts/form.html')
         </div>
       </div>
@@ -167,20 +168,22 @@
           Сколько я заработаю?
         </h4>
 
-        <p class="calk__text">
+        <p class="calk__sub-title">
           Ваша инвестиция
         </p>
 
-        <!-- ползунок -->
+        <div class="calk__range-item">
+          <input type="text" class="js-range-slider" name="my_range" value="150" tabindex="-1" readonly="">
 
-        <p class="calk__text">
-          Ваша прибыль
-        </p>
+          <p class="calk__text">
+            Ваша прибыль
+          </p>
 
-        <!-- результат ползунка -->
-
+          <p class="calk__range-item-sum" id="calcResult">
+            431095 руб.
+          </p>
         <div class="calk__btn">
-          <button class="btn">Узнать подробнее</button>
+          <a href="#about" class="btn">Узнать подробнее</a>
         </div>
       </div>
     </div>
