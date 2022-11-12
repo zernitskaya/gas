@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gas</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./plugins/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/ion.rangeSlider.min.css">
+  <link rel="shortcut icon" href="./img/favicon.ico">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrap content">
+      <div class="header__logo-wrap">
+        <img src="./img/logo.png" alt="" class="header__logo">
+      </div>
+
+      <div class="header__logo-wrap">
+        <img src="./img/rus.png" alt="" class="header__logo">
+      </div>
+    </div>
+  </header>
+
+  <div class="flag left">
+    <div class="flag__prop" id="rand_man"></div>
+    <div class="flag__val">ЧЕЛОВЕК НА СТРАНИЦЕ</div>
+  </div>
+
+  <div class="flag right">
+    <div class="flag__prop" id="rand_places"></div>
+    <div class="flag__val">СВОБОДНЫХ МЕСТ</div>
+  </div>
+
+  <section class="main">
+    <div class="main__wrap content">
+      <div class="main__heading-wrap">
+        <h1 class="main__heading heading">
+          Газпром разрешил торговать газом
+        </h1>
+        <p class="main__text">
+          Теперь национальные ресурсы в ваших руках!
+        </p>
+      </div>
+
+      <div class="main__wrapper">
+        <div class="main__video-wrap">
+          <iframe class="main__video" id="ytplayer" class="video-js embed-responsive-item" frameborder="0"
+            allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            title="YouTube video player"
+            src="https://www.youtube.com/embed/WKQ5AqtJ1_I?controls=1&amp;disablekb=0&amp;loop=1&amp;modestbranding=1&amp;rel=0&amp;fs=0&amp;showinfo=0&amp;autoplay=1&amp;playlist=WKQ5AqtJ1_I&amp;mute=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgakhtbfsxjmnkjst.info&amp;widgetid=1"></iframe>
+        </div>
+
+        <div class="main__form-wrap" id="about">
+          <form class="main__form form">
+
+  <p class="form__text">
+    Начните зарабатывать на государственном газе!
+  </p>
+
+  <fieldset class="form__inputs">
+    <label class="input-item">
+      <input class="input-item__input" type="text" placeholder="Имя">
+    </label>
+
+    <label class="input-item">
+      <input class="input-item__input" type="text" placeholder="Фамилия">
+    </label>
+
+    <label class="input-item error">
+      <input class="input-item__input" type="email" placeholder="Электронная почта">
+    </label>
+
+    <label class="input-item input-item-tel">
+      <span class="input-item__tel">
+        <span class="input-item__icon-tel ru"></span>
+        <span class="input-item__code">+7</span>
+      </span>
+      <input class="input-item__input" type="tel" placeholder="9123 12345">
+    </label>
+  </fieldset>
+
+
+  <fieldset class="form__btn">
+    <button class="btn">Начать зарабатывать</button>
+  </fieldset>
+
+  <fieldset class="form__checks">
+    <label class="checkbox-item">
+      <input class="checkbox-item__check" type="checkbox" checked="checked">
+
+      <span class="checkbox-item__text">
+        Я даю согласие на сбор адреса моей электронной почты в целях получения коммерческих предложений, которые, по
+        нашему мнению, будут представлять интерес для вас от имени компаний и отраслей, подробно описанных в наших
+        Условиях пользования и Политике конфиденциальности.
+      </span>
+    </label>
+  </fieldset>
+</form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about__wrapper content">
+      <div class="about__dark-wrap">
+        <h2 class="about__heading heading">
+          Почему это выгодно
+          для обычных граждан
+        </h2>
+
+        <div class="about__pluses">
+          <div class="about__img-wrap">
+            <img src="./img/risk.png" alt="" class="about__img">
+          </div>
+
+          <p class="about__text">
+            Значительная прибыль при минимальных рисках
+          </p>
+        </div>
+
+        <div class="about__pluses">
+          <div class="about__img-wrap">
+            <img src="./img/aktiv.png" alt="" class="about__img">
+          </div>
+
+          <p class="about__text">
+            Один из самых доходных активов
+          </p>
+        </div>
+
+        <div class="about__pluses">
+          <div class="about__img-wrap">
+            <img src="./img/vuvod.png" alt="" class="about__img">
+          </div>
+
+          <p class="about__text">
+            Быстрый вывод средств на любую карту банка России
+          </p>
+        </div>
+      </div>
+
+      <div class="about__blue-wrap">
+        <h2 class="about__heading heading">
+          Что нужно сделать, чтобы начать зарабатывать c Газпром уже сейчас?
+        </h2>
+
+        <ul class="about__list">
+          <li class="about__item">
+            Зарегистрироваться на данном сайте в форме выше
+          </li>
+
+          <li class="about__item">
+            Дождаться звонка от консультанта компании Газпром и подтвердить регистрацию
+          </li>
+
+          <li class="about__item">
+            Выбрать желаемую сумму на счет и уже через 30 дней получить первый доход
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="consult">
+    <div class="consult__wrapper content">
+      <div class="consult__left-wrap">
+        <h4 class="consult__heading">
+          Алексей Миллер
+        </h4>
+
+        <p class="consult__text-small">
+          председатель правления совета
+          директоров ПАО «Газпром»
+        </p>
+
+        <p class="consult__text">
+          Мы приняли решение открыть доступ к торгам для всех граждан страны, поскольку это будет выгодно как для
+          Газпрома, так и для россиян.
+        </p>
+
+        <p class="consult__text">
+          Дело в том, что на данный момент российский газ становится самым востребованным на мировом рынке. Во всех
+          странах мира стремительно растет спрос на его покупку. По этой причине мы решили увеличить объемы производства
+          газа в 4 раза и привлечь людей со всей России в качестве инвесторов.
+        </p>
+
+        <p class="consult__text">
+          Поскольку цены на газ сейчас быстро меняются, все, кто участвуют в проектах Газпрома, получают в среднем по
+          $800-$8,500 дохода ежемесячно.
+        </p>
+
+        <div class="consult__btn">
+          <a href="#about" class="btn">Проконсультироваться</a>
+        </div>
+      </div>
+
+      <div class="consult__right-wrap">
+        <img src="./img/photo.jpeg" alt="" class="consult__img">
+      </div>
+    </div>
+  </section>
+
+  <section class="calk">
+    <div class="calk__wrapper content">
+      <div class="calk__block">
+        <h4 class="calk__heading">
+          Сколько я заработаю?
+        </h4>
+
+        <p class="calk__sub-title">
+          Ваша инвестиция
+        </p>
+
+        <div class="calk__range-item">
+          <input type="text" class="js-range-slider" name="my_range" value="150" tabindex="-1" readonly="">
+
+          <p class="calk__text">
+            Ваша прибыль
+          </p>
+
+          <p class="calk__range-item-sum" id="calcResult">
+            431095 руб.
+          </p>
+          <div class="calk__btn">
+            <a href="#about" class="btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="advantages">
+    <div class="advantages__wrap content">
+      <h2 class="advantages__title">
+        Лицензия профессионального участника рынка ценных бумаг
+        «Газпром-Инвест»
+      </h2>
+
+      <p class="advantages__text">
+        Лицензия №045-13980-02000 От 13.12.2019 Профессиональной и биржевой деятельности по ценным бумагам
+        ПАО "Государственная платформа Газпром"
+      </p>
+
+      <div class="advantages__money">
+        <a data-fancybox="gallery" class="license-img fancy-img" href="./img/license.jpeg">
+          <img src="./img/license.jpeg" alt="Лицензия" class="advantages__money-img">
+        </a>
+      </div>
+
+      <div class="advantages__btn">
+        <a data-fancybox="gallery" class="btn" href="./img/license.jpeg">Увеличить фото</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="project">
+    <h2 class="advantages__title content">
+      Проекты Газпрома, открытые для участия
+    </h2>
+
+    <div class="project__wrapper">
+      <div class="project__black">
+        <div class="project__application project__image1">
+          <div class="project__light">
+            <h4 class="project__heading">
+              Сила Сибири
+            </h4>
+
+            <p class="project__text-big">
+              от 50 000 рублей ежемесячно
+            </p>
+
+            <p class="project__text">
+              Крупнейшая система транспортировки газа на востоке России
+            </p>
+
+            <div class="project__btn">
+              <a href="#about" class="btn">Подать заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project__black">
+        <div class="project__application project__image2">
+          <div class="project__light">
+            <h4 class="project__heading">
+              Северный поток
+            </h4>
+
+            <p class="project__text-big">
+              25% гарантированных выплат ежемесячно
+            </p>
+
+            <p class="project__text">
+              Газопровод, напрямую соединивший Россию и Европу
+            </p>
+
+            <div class="project__btn">
+              <a href="#about" class="btn">Подать заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project__black">
+        <div class="project__application project__image3">
+          <div class="project__light">
+            <h4 class="project__heading">
+              Турецкий поток
+            </h4>
+
+            <p class="project__text-big">
+              44% гарантированных выплат ежемесячно
+            </p>
+
+            <p class="project__text">
+              Экспорт газа в Турцию, Южную и Юго-Восточную Европу
+            </p>
+
+            <div class="project__btn">
+              <a href="#about" class="btn">Подать заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-list content">
+    <ul class="trust-list__list">
+      <li class="trust-list__item">
+        <img src="./img/svg/svg1.svg" alt="ic" class="footer__trust-img">
+      </li>
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg2.svg" alt="ic" class="footer__trust-img">
+      </li>
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg3.svg" alt="ic" class="footer__trust-img">
+      </li>
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg4.svg" alt="ic" class="footer__trust-img">
+      </li>
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg5.svg" alt="ic" class="footer__trust-img">
+      </li>
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg6.svg" alt="ic" class="footer__trust-img">
+      </li>
+    </ul>
+
+    <ul class="trust-list__list ">
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg7.svg" alt="ic" class="footer__trust-img">
+      </li>
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg8.svg" alt="ic" class="footer__trust-img">
+      </li>
+
+      <li class="trust-list__item">
+        <a class="trust-list__link" href="">
+          <img src="./img/svg/svg9.svg" alt="ic" class="footer__trust-img">
+        </a>
+      </li>
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg10.svg" alt="ic" class="footer__trust-img">
+      </li>
+
+      <li class="trust-list__item">
+        <img src="./img/svg/svg11.svg" alt="ic" class="footer__trust-img">
+      </li>
+    </ul>
+  </section>
+
+  <section class="form-sect">
+    <div class="form-sect__wrap content">
+      <div class="form-sect__footer">
+        <form class="main__form form__footer">
+          <div class="form__gas-wrap">
+            <img src="./img/logo.png" alt="" class="header__logo">
+          </div>
+
+          <p class="form__text text">
+            Начните зарабатывать на государственном газе!
+          </p>
+
+          <fieldset class="form__inputs">
+            <label class="input-item">
+              <input class="input-item__input" type="text" placeholder="Имя">
+            </label>
+
+            <label class="input-item">
+              <input class="input-item__input" type="text" placeholder="Фамилия">
+            </label>
+
+            <label class="input-item error">
+              <input class="input-item__input" type="email" placeholder="Электронная почта">
+            </label>
+
+            <label class="input-item input-item-tel">
+              <span class="input-item__tel">
+                <span class="input-item__icon-tel ru"></span>
+                <span class="input-item__code">+7</span>
+              </span>
+              <input class="input-item__input" type="tel" placeholder="9123 12345">
+            </label>
+          </fieldset>
+
+          <fieldset class="form__btn">
+            <button class="btn">Начать зарабатывать</button>
+          </fieldset>
+
+          <fieldset class="form__checks">
+            <label class="checkbox-item">
+              <input class="checkbox-item__check" type="checkbox" checked="checked">
+
+              <span class="checkbox-item__text">
+                Я даю согласие на сбор адреса моей электронной почты в целях получения коммерческих предложений,
+                которые, по
+                нашему мнению, будут представлять интерес для вас от имени компаний и отраслей, подробно описанных в
+                наших
+                Условиях пользования и Политике конфиденциальности.
+              </span>
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrap content">
+      <p class="footer__cop-text">
+        *Все результаты работы в данной сфере индивидуальны и зависят от каждого клиента ПАО "ГазПромИнвестинг" ул.
+        Тимура Фрунзе, д. 11, Москва, Россия, 119034, БЦ «Демидов» Политика конфиденциальности ©2019-2022
+        ГазПромИнвестинг
+      </p>
+    </div>
+  </footer>
+
+  <script src="./plugins/jquery.min.js"></script>
+  <script src="./plugins/jquery.fancybox.min.js"></script>
+  <script src="./plugins/ion.rangeSlider.min.js"></script>
+  <script src="./js/script.min.js"></script>
+
+  <script>
+    $('#rand_man').text(Math.floor(Math.random() * (130 - 99 + 1)) + 99);
+    $('#rand_places').text(Math.floor(Math.random() * (19 - 9 + 1)) + 9);
+  </script>
+
+</body>
+
+</html>
